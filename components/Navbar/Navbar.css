@@ -1,0 +1,132 @@
+/* Navbar CSS */
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    border-bottom: 1px solid #E5E8EB;
+}
+
+.Navbar .branding {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.Navbar .navigations {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 32px;
+}
+
+
+
+.searchbarWrapper {
+    border-radius: 12px;
+    width: 160px;
+    height: 40px;
+    background-color: #E8EDF2;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 8px 16px;
+}
+
+.searchbarWrapper svg {
+    width: 24px;
+    height: 24px;
+}
+
+.searchbarWrapper svg path {
+    stroke: #4D7399;
+}
+
+.searchbarWrapper input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D7399;
+    padding: 0 8px;
+    background-color: transparent;
+    border: none;
+}
+
+.searchbarWrapper input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D7399;
+}
+
+.searchbarWrapper input:focus {
+    border: none;
+    outline: none;
+}
+
+
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.bell-button {
+    position: relative;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50rem;
+    background-color: #E8EDF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    /* padding: 2px 6px; */
+    border-radius: 50rem;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-dropdown {
+    position: absolute;
+    right: 0;
+    top: 46px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.notification-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background-color: #f5f5f5;
+}
+
+.notification-item.empty {
+    text-align: center;
+    color: #999;
+}

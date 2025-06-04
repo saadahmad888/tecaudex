@@ -1,0 +1,17 @@
+.PageHeading {
+    padding: 36px 0;
+}
+
+.PageHeading .pageTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0D141C;
+    margin-bottom: 12px;
+}
+
+.PageHeading .description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D7399;
+    margin-bottom: 0;
+}
